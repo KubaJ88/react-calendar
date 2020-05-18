@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import CalendarProvider from './provider/calendar.provider';
 
 ReactDOM.render(
   <React.StrictMode>
+    <CalendarProvider>
     <App />
+    </CalendarProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
